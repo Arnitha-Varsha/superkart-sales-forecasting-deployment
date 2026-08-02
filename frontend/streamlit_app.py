@@ -35,7 +35,7 @@ if st.button("Predict Sales"):
         "Store_Type": store_type,
         "Store_Age": store_age
     }
-    
+
     try:
         response = requests.post(backend_url, json=payload)
         if response.status_code == 200:
